@@ -38,6 +38,7 @@ return new InMemoryUserDetailsManager(userList);
     @Bean
     public SecurityFilterChain filterChain (HttpSecurity http) throws Exception {
         return http
+                //hfhf
                 .authorizeRequests()
              //   .antMatchers("/user/**").hasRole("ADMIN")
                 .antMatchers("/user/**").hasAuthority("Admin")
