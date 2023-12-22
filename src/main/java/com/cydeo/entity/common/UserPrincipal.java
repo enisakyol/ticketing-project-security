@@ -55,4 +55,8 @@ private User user;
     public boolean isEnabled() {
         return this.user.isEnabled();
     }
+
+    public Long getId(){
+        return this.user.getId();
+    }
 }
